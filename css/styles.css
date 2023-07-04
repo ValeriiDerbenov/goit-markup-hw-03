@@ -1,0 +1,174 @@
+:root {
+    --primary-font: 'Roboto', sans-serif;
+    --title-font: 'Raleway', sans-serif;
+    --primary-black-color: #2E2F42;
+    --primary-white-color: #FFFFFF;
+    --primary-brand-color: #4D5AE5;
+    --pressed-state-color: #404BBF;
+    --body-text-color: #434455;
+    --helper-text-color: #8E8F99;
+    --primary-success-color: #31D0AA;
+    --primary-accent-color: #E7E9FC;
+    --secondary-accent-color: #0288d1;
+    --active-link-color: #f44336;
+    --white: #FFF;
+    --cloud: #F4F4FD;
+}
+body {
+    font-family: var(--primary-font);
+    color: var(--body-text-color);
+    background-color: var(--primary-white-color);
+}
+.list {
+    list-style: none;
+}
+.link {
+    text-decoration: none;    
+}
+address {
+    font-style: normal;
+}
+header {
+    background-color: var(--white);
+}
+.header-logo {
+    font-family: var(--title-font);
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    line-height: 1.17;
+    color: var(--primary-brand-color);
+}
+.webstudio-title {
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--primary-white-color)
+}
+.header-logo-studio {
+    color: var(--primary-black-color);
+}
+.nav-menu-studio {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+    color: var(--primary-black-color);
+}
+.nav-menu-studio:hover,
+.nav-menu-studio:focus {
+    color: var(--pressed-state-color);
+}
+.address-menu-list-item {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--body-text-color);
+}
+.address-menu-list-item:hover,
+.address-menu-list-item:focus {
+    color: var(--pressed-state-color);
+}
+.section-studio-first {
+    background-color: var(--primary-black-color);
+}
+.section-studio-fourth {
+    background-color: var(--cloud);
+}
+.section-studio-list-name {
+    background-color: var(--primary-white-color);
+}
+.order-service {
+    font-family: var(--primary-font);
+    background: var(--primary-brand-color);
+    color: var(--primary-white-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    border: none;
+}
+.order-service:hover,
+.order-service:focus {
+    background-color: var(--pressed-state-color);
+}
+.section-studio-title {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--primary-black-color);
+}
+.section-studio-list-item,
+.section-studio-list-name {
+    color: var(--primary-black-color);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    line-height: 1.2;
+}
+.section-studio-list-text {
+    color: var(--body-text-color);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+.section-studio-list-box {
+    background-color: var(--primary-white-color);
+}
+.team-photo {
+    background-color: var(--primary-white-color);
+}
+.portfolio-button-item {
+    font-family: var(--primary-font);
+    background-color: var(--cloud);
+    color: var(--primary-brand-color);
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    line-height: 1.5;
+    cursor: pointer;
+}
+.portfolio-button-item:hover,
+.portfolio-button-item:focus {
+    color: var(--primary-white-color);
+    background-color: var(--pressed-state-color);
+}
+ .portfolio-job-projects-name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--primary-black-color);
+}
+.portfolio-job-projects-theme {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--body-text-color);
+}
+.footer {
+    background-color: var(--primary-black-color);
+}
+.footer-logo {
+    font-family: var(--title-font);
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
+    line-height: 1.17;
+    color: var(--primary-brand-color);   
+}
+.footer-logo-studio {
+    color: var(--cloud);
+}
+.footer-text {
+    color: var(--cloud);
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
