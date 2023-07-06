@@ -1,3 +1,27 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 :root {
     --primary-font: 'Roboto', sans-serif;
     --title-font: 'Raleway', sans-serif;
@@ -18,6 +42,8 @@ body {
     font-family: var(--primary-font);
     color: var(--body-text-color);
     background-color: var(--primary-white-color);
+    margin: 0;
+    width: 1128px;
 }
 .list {
     list-style: none;
@@ -28,9 +54,62 @@ body {
 address {
     font-style: normal;
 }
+img {
+	display: block;
+    max-width: 100%;
+}   
+.container {
+    max-width: 1128px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    /* margin: 0 auto;
+    padding: 0 16px; */
+}
+header .container {
+    display: flex;
+  
+}
+.section-studio-list {
+    display: flex; 
+    justify-content: space-between;  
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    }
 header {
     background-color: var(--white);
+    display: flex;
+    margin: 0;
+    list-style-type: none;
+    padding: 24px 0;
+    border-bottom: 1px solid var(--primary-accent-color);
+
 }
+nav {
+    display: flex;
+    gap: 76px;
+    margin-right: 332px;   
+}
+.nav-menu {
+    display: flex;
+    gap: 40px;
+}
+.address-menu-list {
+    display: flex;
+    gap: 40px;
+}
+
 .header-logo {
     font-family: var(--title-font);
     font-size: 18px;
@@ -40,13 +119,7 @@ header {
     line-height: 1.17;
     color: var(--primary-brand-color);
 }
-.webstudio-title {
-    font-size: 56px;
-    line-height: 1.07;
-    text-align: center;
-    letter-spacing: 0.02em;
-    color: var(--primary-white-color)
-}
+
 .header-logo-studio {
     color: var(--primary-black-color);
 }
@@ -72,7 +145,20 @@ header {
     color: var(--pressed-state-color);
 }
 .section-studio-first {
+    display: flex;
+    text-align: center;
+    padding: 188px 316px;
     background-color: var(--primary-black-color);
+}
+.webstudio-title {    
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    color: var(--primary-white-color);    
+}
+.section-studio-second,
+.section-studio-fourth {
+    padding: 120px 0;
 }
 .section-studio-fourth {
     background-color: var(--cloud);
@@ -89,7 +175,11 @@ header {
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
+    padding: 16px 32px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     border: none;
+    margin-top: 48px;
 }
 .order-service:hover,
 .order-service:focus {
@@ -102,6 +192,7 @@ header {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--primary-black-color);
+    margin-bottom: 72px;
 }
 .section-studio-list-item,
 .section-studio-list-name {
@@ -154,6 +245,9 @@ header {
 }
 .footer {
     background-color: var(--primary-black-color);
+    padding-top: 101.5px;
+    padding-bottom: 100px;
+    padding-right: calc(1020-156)px;
 }
 .footer-logo {
     font-family: var(--title-font);
@@ -162,7 +256,8 @@ header {
     letter-spacing: 0.54px;
     text-transform: uppercase;
     line-height: 1.17;
-    color: var(--primary-brand-color);   
+    color: var(--primary-brand-color);  
+    
 }
 .footer-logo-studio {
     color: var(--cloud);
@@ -171,4 +266,6 @@ header {
     color: var(--cloud);
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin-top: 17.5px; 
+    width: 264px;
 }
