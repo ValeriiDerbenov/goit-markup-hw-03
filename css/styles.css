@@ -6,17 +6,14 @@ h5,
 h6 {
     margin: 0;
 }
-
 p {
     margin: 0;
 }
-
 ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
 }
-
 :root {
     --primary-font: 'Roboto', sans-serif;
     --title-font: 'Raleway', sans-serif;
@@ -77,6 +74,7 @@ header .container {
     clip: rect(0 0 0 0);
     overflow: hidden;
     }
+/* header */
 header {
     background-color: var(--white);
     display: flex;
@@ -98,7 +96,6 @@ nav {
     display: flex;
     gap: 40px;
 }
-
 .header-logo {
     font-family: var(--title-font);
     font-size: 18px;
@@ -132,6 +129,7 @@ nav {
 .address-menu-list-item:focus {
     color: var(--pressed-state-color);
 }
+/* Studio */
 .section-studio-first {
     background-color: var(--primary-black-color);
 }
@@ -196,7 +194,6 @@ nav {
     margin-bottom: 8px;
     justify-content: center;
 }
-
 .section-studio-list-item,
 .section-studio-list-name {
     color: var(--primary-black-color);
@@ -224,11 +221,11 @@ nav {
 .team-photo {
     background-color: var(--primary-white-color);
 }
+/* footer */
 .footer {
     background-color: var(--primary-black-color);
     padding-top: 101.5px;
     padding-bottom: 100px;
-    padding-right: calc(1020-156)px;
 }
 .footer-logo {
     font-family: var(--title-font);
@@ -280,9 +277,10 @@ nav {
     background-color: var(--pressed-state-color);
 }
 .portfolio-job-projects-item {
+    display: flex;
     border: 1px solid var(--primary-accent-color);
-}
-.portfolio-job-projects-item .link{
+    }
+.portfolio-job-projects-item .link {
     display: flex;
     width: 360px;
     padding-bottom: 32px;
@@ -294,7 +292,7 @@ nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-}
+    }
 .portfolio-job-projects-name {
     display: flex;
     font-weight: 500;
@@ -313,11 +311,9 @@ nav {
 .portfolio-job-projects-name,
 .portfolio-job-projects-theme {
     gap: 8px;
-    padding: 0 16px;
+    padding: 0 16px;    
 }
-.row-1,
-.row-2 {
-    display: flex;
+.portfolio-job-projects-list>.row-1,
+.portfolio-job-projects-list>.row-2 {
     margin-bottom: 48px;
- 
 }
