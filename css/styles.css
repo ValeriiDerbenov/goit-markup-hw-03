@@ -278,12 +278,11 @@ nav {
 }
 .portfolio-job-projects-item {
     display: flex;
-    border: 1px solid var(--primary-accent-color);
+    border-bottom: 1px solid var(--primary-accent-color);
     }
 .portfolio-job-projects-item .link {
     display: flex;
     width: 360px;
-    padding-bottom: 32px;
     flex-direction: column;
     justify-content: flex-start;
     
@@ -300,6 +299,10 @@ nav {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--primary-black-color);
+    margin-top: 32px;
+    padding: 0 16px;
+    border-left: 1px solid var(--primary-accent-color);
+    border-right: 1px solid var(--primary-accent-color);
 }
 .portfolio-job-projects-theme {
     display: flex;
@@ -307,12 +310,13 @@ nav {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--body-text-color);
+    margin-bottom: 32px;
+    margin-top: 8px;
+    padding: 0 16px;
+    border-left: 1px solid var(--primary-accent-color);
+    border-right: 1px solid var(--primary-accent-color);
 }
-.portfolio-job-projects-name,
-.portfolio-job-projects-theme {
-    gap: 8px;
-    padding: 0 16px;    
-}
+
 .portfolio-job-projects-list>.row-1,
 .portfolio-job-projects-list>.row-2 {
     margin-bottom: 48px;
