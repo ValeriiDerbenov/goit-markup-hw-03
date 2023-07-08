@@ -56,9 +56,6 @@ address {
     justify-content: center;
     margin: 0 auto;
 }
-.header {
-    padding: 0 15px;
-}
 .visually-hidden {
     position: absolute;
     width: 1px;
