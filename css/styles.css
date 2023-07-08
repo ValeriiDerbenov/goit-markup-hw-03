@@ -50,17 +50,10 @@ img {
     max-width: 100%;
 }   
 .container {
-    max-width: 1128px;
+    width: 1128px;
     justify-content: center;
     margin: 0 auto;
-    padding: 0;
-}
-header .container {
-    display: flex;  
-}
-.section-studio-list {
-    display: flex; 
-    justify-content: space-between;  
+    padding: 0 15px;
 }
 .visually-hidden {
     position: absolute;
@@ -77,16 +70,20 @@ header .container {
 /* header */
 header {
     background-color: var(--white);
-    display: flex;
     margin: 0;
     list-style-type: none;
     padding: 24px 0;
     border-bottom: 1px solid var(--primary-accent-color);
 }
-nav {
+.header .container {
     display: flex;
-    gap: 76px;
-    margin-right: 332px;   
+    padding-left: 0;  
+    padding-right: 0;
+}
+.navigation {
+    display: flex;
+    margin-right: 332px;
+    align-items: center; 
 }
 .nav-menu {
     display: flex;
@@ -103,10 +100,12 @@ nav {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     line-height: 1.17;
-    color: var(--primary-brand-color);
+    color: var(--primary-brand-color);  
+    margin-right: 76px;  
 }
 .header-logo-studio {
     color: var(--primary-black-color);
+    padding: 24px 0;
 }
 .nav-menu-studio {
     font-size: 16px;
@@ -114,6 +113,8 @@ nav {
     letter-spacing: 0.02em;
     line-height: 1.5;
     color: var(--primary-black-color);
+    padding: 24px 0;
+
 }
 .nav-menu-studio:hover,
 .nav-menu-studio:focus {
@@ -129,14 +130,15 @@ nav {
 .address-menu-list-item:focus {
     color: var(--pressed-state-color);
 }
-/* Studio */
+/* Studio sections*/
+
 .section-studio-first {
     background-color: var(--primary-black-color);
+    padding: 188px 0;
 }
 .section-studio-first .container {
     display: flex;
-    text-align: center;
-    padding: 188px 316px;
+    text-align: center;   
     flex-direction: column;
     align-items: center;
 }
@@ -145,10 +147,10 @@ nav {
     line-height: 1.07;
     letter-spacing: 0.02em;
     color: var(--primary-white-color); 
-    width: 496px;
+    max-width: 496px;
 }
 .order-service {
-    display: inline-flex;
+    display: block;
     font-family: var(--primary-font);
     background: var(--primary-brand-color);
     color: var(--primary-white-color);
@@ -162,10 +164,9 @@ nav {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     border: none;
     margin-top: 48px;
-    max-width: 170px;
-    align-content: center;
-    flex-wrap: nowrap;
-}
+    min-width: 169px;  
+    height: 56px;
+    }
 .order-service:hover,
 .order-service:focus {
     background-color: var(--pressed-state-color);
@@ -187,12 +188,17 @@ nav {
 .section-studio-fourth {
     background-color: var(--cloud);
 }
+.section-studio-list {
+    display: flex; 
+    gap: 24px;    
+}
+.section-studio-list-element {
+    flex-basis: calc((100% - 72px) / 4);
+}
 .section-studio-list-name {
-    display: flex;
     background-color: var(--primary-white-color);
-    margin-top: 32px;
     margin-bottom: 8px;
-    justify-content: center;
+    text-align: center;
 }
 .section-studio-list-item,
 .section-studio-list-name {
@@ -202,32 +208,39 @@ nav {
     line-height: 24px;
     letter-spacing: 0.02em;
     line-height: 1.2;
+    margin-bottom: 8px;
 }
-.section-studio-list-text {
+.section-studio-list-text,
+.section-studio-list-position {
     color: var(--body-text-color);
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 0.02em;
-    margin-top: 8px;
+    letter-spacing: 0.02em;    
 }
-.section-studio-second .section-studio-list {
-    gap: 24px;
+.section-studio-list-position {
+    text-align: center;
+}
+.studio-image {
+    flex-basis: calc((100% - 48px) / 3);
 }
 .section-studio-list-box {
     background-color: var(--primary-white-color);
-    text-align: center;
-    padding-bottom: 32px;
+    flex-basis: calc((100% - 3 * 24px) / 4);
+    border-radius: 0px 0px 4px 4px;
 }
 .team-photo {
     background-color: var(--primary-white-color);
 }
+.team-name-position {
+    padding: 32px 16px;
+}
 /* footer */
 .footer {
     background-color: var(--primary-black-color);
-    padding-top: 101.5px;
-    padding-bottom: 100px;
+    padding: 100px 0;
 }
 .footer-logo {
+    display: inline-block;
     font-family: var(--title-font);
     font-size: 18px;
     font-weight: 800;
@@ -235,7 +248,7 @@ nav {
     text-transform: uppercase;
     line-height: 1.17;
     color: var(--primary-brand-color);  
-    
+    margin-bottom: 16px;
 }
 .footer-logo-studio {
     color: var(--cloud);
@@ -244,8 +257,7 @@ nav {
     color: var(--cloud);
     line-height: 1.5;
     letter-spacing: 0.02em;
-    margin-top: 17.5px; 
-    width: 264px;
+    max-width: 264px;
 }
 /* portfolio */
 .portfolio-main {
@@ -256,6 +268,7 @@ nav {
     display: flex;
     justify-content: center;
     gap: 24px;
+    margin-bottom: 72px;
 }
 .portfolio-button-item {
     font-family: var(--primary-font);
@@ -269,15 +282,16 @@ nav {
     padding: 12px 24px;
     border-radius: 4px;
     border: 1px solid var(--primary-accent-color);
-    margin-bottom: 72px;
 }
 .portfolio-button-item:hover,
 .portfolio-button-item:focus {
     color: var(--primary-white-color);
     background-color: var(--pressed-state-color);
+    border: 1px solid transparent;
 }
 .portfolio-job-projects-item {
     display: flex;
+    width: calc((100% - 48px)/3);
     border-bottom: 1px solid var(--primary-accent-color);
     }
 .portfolio-job-projects-item .link {
@@ -290,7 +304,8 @@ nav {
 .portfolio-job-projects-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    column-gap: 24px;
+    row-gap: 48px;
     }
 .portfolio-job-projects-name {
     display: flex;
@@ -298,26 +313,18 @@ nav {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: var(--primary-black-color);
-    margin-top: 32px;
-    padding: 0 16px;
-    border-left: 1px solid var(--primary-accent-color);
-    border-right: 1px solid var(--primary-accent-color);
+    color: var(--primary-black-color); 
+    margin-bottom: 8px;   
 }
 .portfolio-job-projects-theme {
     display: flex;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--body-text-color);
-    margin-bottom: 32px;
-    margin-top: 8px;
-    padding: 0 16px;
-    border-left: 1px solid var(--primary-accent-color);
-    border-right: 1px solid var(--primary-accent-color);
+    color: var(--body-text-color); 
 }
-
-.portfolio-job-projects-list>.row-1,
-.portfolio-job-projects-list>.row-2 {
-    margin-bottom: 48px;
+.job-projects-discription {
+    padding: 32px 16px;
+    border: 1px solid var(--primary-accent-color);
+    border-top: none;
 }
